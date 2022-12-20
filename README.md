@@ -23,12 +23,12 @@ Project Block Diagram
 
 Presently, we use distributed control systems in the industries, using a panel control unit to control and monitor the temperature and flow parameters. Manual assistance at all times when the plant is in operation is the limitation of this system. The person who is present inside the plant during an emergency also is in risk of his/her life in case of any emergency. Hence, we propose a model so that the operating person can remotely control and monitor the boiler feed water in a power plant. Boiler parameters such as water level, pressure and temperature are monitored using water level sensor, pressure sensor and temperature sensor respectively. The real time information of these parameters will be sent to the programmed decision making microcontroller unit which will turn ON/Off corresponding parameter relays and its associated switching units depending upon the real time information received from the various parameter relays, if the operating conditions are well within the preset limits then no control command will be sent to the relay via the decision making microcontroller or else if there is any violation in the operating conditions then microcontroller will send the control signal to the associated relay to turn ON/OFF depending on the real time information. The real time information can be visualized on the LCD display and the same information can be sent to the mobile-phone registered number in the form of SMS via GSM 
 
-## SOFTWARE IMPLEMENTATION:
+## SOFTWARE IMPLEMENTATION
 
 Proteus Circuit Diagram 
 In this system transmitter section mainly consists of three sensor networks which senses various boiler parameters. Temperature sensor, PIR sensor and pressure sensor are used in this model. Sensors analog output are connected to ADC (Analog to Digital Converter) to convert analog information to digital form, then this digital information is processed using PIC 8051 microcontroller. PIC 8051 microcontroller does the controlling section. Whole sensor’s data are stored in the processor memory and sent to the database then to the display device. It indicates the workers through a buzzer in the workplace and through an alarming system in the user system by GSM receiver in remote places which have connectivity to the 8051 microcontroller if any of the sensor's data exceeds or below its threshold level. The connected servos are used to turn ON/OFF the fuel and water tank valves according to the situation. Hence we can automatically control the environment of the boiler. 
 
-## HARDWARE IMPLEMENTATION:
+## HARDWARE IMPLEMENTATION
 
 From both the simulation and the hardware implementation we could cover the objectives of the project. Even though the simulations provided trustworthy results, hardware implementations verifies all the simulation data and outputs. Simulations were conducted using Proteus software as shown in the figure given down below. Normal pressure indicates that the pressure inside the boiler is under safe limits. A lot of boiler explosion cases have been seen due to extreme pressure build up inside the boilers due to the steam produced by the fluids of the container. If the pressure exceeds the safe range which has been applied inside the code, an alarm of high pressure will be displayed 
  
@@ -50,7 +50,7 @@ Complete Hardware System
 
 
 
-## ROADMAP:
+## ROADMAP
 Even though our project is a miniature small scale replica of what can be done, we could use this exact same application at a larger scale and actually solve this extremely prevalent problem in the industry. The future prospects of the project range from publishing the outputs online to sending quick messages to factory workers as an alert. This problem is not only restricted to boiler plants, but any industrial application where there is a need for controlling the amount of input substance into a chamber and monitoring necessary parameters. So on a larger scale the same application could be taken and applied on to several other industrial applications that have similar functionality. By the integration of basic sensors and using them to calculate the parameter values we are reducing the costs, and also by fully rotating the servo motor without a control system application, we are further reducing the complexity and solving this problem in the most straightforward way possible. 
 
 
